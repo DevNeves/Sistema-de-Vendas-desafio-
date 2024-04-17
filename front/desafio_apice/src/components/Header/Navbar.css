@@ -1,0 +1,16 @@
+.nav-container {
+  background-color: #5e6d91;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+}
+
+.nav-container h1 {
+  color: #ebebeb;
+}
+.dropdowns {
+  display: flex;
+  gap: 30px;
+}
