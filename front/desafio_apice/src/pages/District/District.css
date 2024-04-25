@@ -1,0 +1,22 @@
+.createDistrict__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.district__input {
+  width: 50%;
+  height: 35px;
+  padding-left: 5px;
+}
+
+.listDistricts__btn {
+  padding: 0 20px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}

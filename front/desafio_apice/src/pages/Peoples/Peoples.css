@@ -1,0 +1,29 @@
+.createPeoples__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+input[type='text'],
+input[type='fone'],
+input[type='email'],
+select {
+  background-color: #ebebeb;
+  height: 35px;
+  font-size: 16px;
+  padding-left: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px black;
+  outline: none;
+}
+
+.listPeoples__btn {
+  padding: 0 20px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
