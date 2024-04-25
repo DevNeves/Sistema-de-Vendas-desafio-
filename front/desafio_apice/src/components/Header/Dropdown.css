@@ -23,7 +23,7 @@
 
 .dropdown__content {
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100%);
   background-color: #ebebeb;
   border: none;
   border-radius: 5px;
@@ -39,4 +39,5 @@
 
 .dropdown__item:hover {
   background-color: #e0e0e0;
+  border-radius: 15px;
 }

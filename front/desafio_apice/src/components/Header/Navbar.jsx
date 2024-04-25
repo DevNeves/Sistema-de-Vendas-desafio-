@@ -3,9 +3,18 @@ import './Navbar.css';
 import Dropdown from './Dropdown';
 
 const Navbar = () => {
-  const itensCadastro = ['Bairro', 'Cidade', 'Pessoas', 'Produtos'];
-  const itensMovimentos = ['Vendas'];
-  const itensRelatorios = ['Lista de Pessoas', 'Lista de Vendas'];
+  const itensCadastro = [
+    { title: 'Bairro', link: '/admin/bairro' },
+    { title: 'Cidade', link: '/admin/cidade' },
+    { title: 'Pessoas', link: '/admin/pessoa' },
+    { title: 'Produtos', link: '/admin/produto' },
+  ];
+
+  const itensMovimentos = [{ title: 'Vendas', link: '/admin/vendas' }];
+  const itensRelatorios = [
+    { title: 'Lista de Pessoas', link: '/admin/lista-pessoas' },
+    { title: 'Lista de Vendas', link: '/admin/lista-vendas' },
+  ];
 
   return (
     <nav className="nav-container">
