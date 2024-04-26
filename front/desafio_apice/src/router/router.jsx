@@ -109,11 +109,19 @@ export const router = createBrowserRouter([
       },
       {
         path: '/admin/lista-vendas',
-        element: <SalesList />,
+        element: (
+          <SalesContextProvider>
+            <SalesList />,
+          </SalesContextProvider>
+        ),
       },
       {
         path: '/admin/lista-pessoas',
-        element: <PeopleList />,
+        element: (
+          <PeopleContextProvider>
+            <PeopleList />,
+          </PeopleContextProvider>
+        ),
       },
     ],
   },

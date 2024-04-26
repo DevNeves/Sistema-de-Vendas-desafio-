@@ -74,3 +74,11 @@ body {
   color: #445479;
   font-size: 30px;
 }
+
+.create-pdf__btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 1rem;
+}

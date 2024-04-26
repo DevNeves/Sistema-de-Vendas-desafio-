@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './components/Header/Navbar';
-import Footer from './components/Footer/Footer';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +10,6 @@ function App() {
     <div>
       <Navbar />
       <Outlet />
-      {/* <Footer /> */}
       <ToastContainer
         position="bottom-left"
         autoClose={1500}

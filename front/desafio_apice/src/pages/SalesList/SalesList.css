@@ -1,0 +1,9 @@
+.filters__date {
+  width: 25%;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.filters__date:nth-child(2) {
+  margin-left: 15px;
+}
