@@ -91,7 +91,9 @@ const City = () => {
           <input className="city__input" type="text" name="cidade" required />
         </label>
         <div className="btns__area">
-          <button className="cancel__btn">Cancelar</button>
+          <button className="cancel__btn" onClick={() => document.location.reload()}>
+            Cancelar
+          </button>
           <button className="confirm__btn" type="submit">
             Confirmar
           </button>

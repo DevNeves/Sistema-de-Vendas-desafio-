@@ -61,7 +61,7 @@ body {
 }
 
 .actions__td {
-  width: 10%;
+  width: 13%;
   cursor: pointer;
 }
 
@@ -75,6 +75,10 @@ body {
   font-size: 30px;
 }
 
+.createpdf__icon {
+  color: #445479;
+  font-size: 30px;
+}
 .create-pdf__btn {
   cursor: pointer;
   padding: 5px 15px;

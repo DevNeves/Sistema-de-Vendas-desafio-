@@ -144,7 +144,9 @@ const Sales = () => {
       </form>
       <SaleItens products={products} />
       <div className="btns__area">
-        <button className="cancel__btn">Cancelar</button>
+        <button className="cancel__btn" onClick={() => document.location.reload()}>
+          Cancelar
+        </button>
         <button className="confirm__btn" onClick={handleSaleConfirm}>
           Confirmar
         </button>

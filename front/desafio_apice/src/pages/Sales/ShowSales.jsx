@@ -2,10 +2,13 @@ import './ShowSales.css';
 
 import { FaRegEdit } from 'react-icons/fa';
 import { FaRegTrashAlt } from 'react-icons/fa';
+import { FiPrinter } from 'react-icons/fi';
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSalesContext } from '../../hooks/useSalesContext';
 import { toast } from 'react-toastify';
+
+import CreateNotePDF from '../../CreatingPDF/CreateNotePDF';
 
 const toastAtt = {
   position: 'bottom-left',
@@ -14,7 +17,8 @@ const toastAtt = {
 };
 
 const ShowSales = () => {
-  const { sales, getSales, deleteSale, setSaleToEdit, getSaleItensList } = useSalesContext();
+  const { sales, getSales, deleteSale, setSaleToEdit, getSaleItensList, saleList, peoples } =
+    useSalesContext();
   const navigate = useNavigate();
 
   const handleEdit = (sale) => {
@@ -56,6 +60,10 @@ const ShowSales = () => {
               <td className="actions__td">
                 <FaRegEdit onClick={() => handleEdit(sale)} className="edit__icon" />
                 <FaRegTrashAlt onClick={() => handleDelete(sale.id)} className="delete__icon" />
+                <FiPrinter
+                  onClick={() => CreateNotePDF(sale, saleList, peoples)}
+                  className="createpdf__icon"
+                />
               </td>
             </tr>
           ))}

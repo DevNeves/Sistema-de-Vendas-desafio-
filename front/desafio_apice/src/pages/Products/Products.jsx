@@ -85,7 +85,9 @@ const Products = () => {
           <input className="product__input" type="text" name="product" required />
         </label>
         <div className="btns__area">
-          <button className="cancel__btn">Cancelar</button>
+          <button className="cancel__btn" onClick={() => document.location.reload()}>
+            Cancelar
+          </button>
           <button className="confirm__btn">Confirmar</button>
         </div>
       </form>
